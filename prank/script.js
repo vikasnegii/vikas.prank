@@ -309,3 +309,12 @@ loveNo.addEventListener("click", function() {
     }
 
 });
+@media (max-width: 600px) {
+
+    .iq {
+        font-size: 58px;
+        white-space: nowrap;
+        letter-spacing: -2px;
+    }
+
+}
