@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brain Test 🧠</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= PAGE 1 ================= -->
+
+    <section class="page active" id="page1">
+
+        <div class="topbar">
+            <div class="app-name">🧠 BRAIN TEST</div>
+            <div class="version">v2.0</div>
+        </div>
+
+        <div class="page-number">PAGE 1 OF 9 </div>
+
+        <div class="brain-icon">🧠</div>
+
+        <h1>
+            YOUR BRAIN HAS<br>
+            <span>LEFT THE CHAT</span>
+        </h1>
+
+        <div class="info-card">
+
+            <p>🟢 SYSTEM INITIALIZING...</p>
+            <p>🔵 CONNECTING TO BRAIN...</p>
+            <p>🟣 INTELLIGENCE SCAN...</p>
+
+            <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+
+            <strong>87%</strong>
+
+        </div>
+
+        <div class="warning-card">
+            ⚠️ WARNING
+            <br>
+            <b>You can also get annoyed by this💀😬.</b>
+        </div>
+
+        <p class="description">
+            Don't worry. We prepared a completely
+            unnecessary intelligence test for you. 😭
+        </p>
+
+        <button class="main-btn" onclick="nextPage()">
+            🚀 START TEST
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 2 ================= -->
+
+    <section class="page" id="page2">
+
+        <div class="topbar">
+            <div class="app-name">🧠 BRAIN TEST</div>
+            <div class="version">v2.0</div>
+        </div>
+
+        <div class="page-number">PAGE 2 OF 9</div>
+
+        <div class="question-card">
+
+            <div class="question-number">
+                QUESTION_01
+            </div>
+
+            <div class="emoji">🤔</div>
+
+            <h2>
+                What is<br>
+                <span>2 + 2?</span>
+            </h2>
+
+            <div class="answer-buttons">
+
+                <button
+                    id="yesButton"
+                    class="answer-btn">
+                    4
+                </button>
+
+                <button
+                    class="answer-btn"
+                    onclick="nextPage()">
+                    5
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hint-card">
+            💡 Select the correct answer
+            <br>
+            <span>⚠️ Only one answer is correct!</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAGE 3 ================= -->
+
+    <section class="page" id="page3">
+
+        <div class="topbar">
+            <div class="app-name">🧠 BRAIN TEST</div>
+            <div class="version">v2.0</div>
+        </div>
+
+        <div class="page-number">PAGE 3 OF 9</div>
+
+        <div class="error-card">
+
+            <div class="error-icon">
+                💀
+            </div>
+
+            <div class="error-title">
+                ERROR DETECTED
+            </div>
+
+            <h1>
+                INCORRECT!
+            </h1>
+
+            <p>
+                You had ONE job.
+            </p>
+
+        </div>
+
+        <div class="status-card">
+
+            <p>🟣 LOGIC MODULE NOT FOUND</p>
+            <p>🔵 INTELLIGENCE LEVEL: VERY LOW</p>
+
+        </div>
+
+        <p class="description">
+            Scientists have been notified.
+            They're disappointed.
+            Company to dub gyi.😂😬
+        </p>
+
+        <button class="main-btn" onclick="nextPage()">
+            ➜ CONTINUE
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 4 ================= -->
+
+    <section class="page" id="page4">
+
+        <div class="topbar">
+            <div class="app-name">🧠 BRAIN TEST</div>
+            <div class="version">v2.0</div>
+        </div>
+
+        <div class="page-number">PAGE 4 OF 9</div>
+
+        <h2 class="scan-title">
+            🧠 RUNNING CONFIDENCE SCAN...
+        </h2>
+
+        <p class="scan-description">
+            Drag the slider to set your confidence level.
+        </p>
+
+        <div class="slider-card">
+
+            <div class="slider-section">
+
+                <div class="slider-top">
+                    I'M A GENIUS 😎
+                </div>
+
+                <div class="slider-wrapper">
+
+                    <input
+                        type="range"
+                        id="careSlider"
+                        min="0"
+                        max="100"
+                        value="0">
+
+                </div>
+
+                <div class="slider-bottom">
+                    I am really dumb🥲😭
+                </div>
+
+            </div>
+
+            <div class="system-card">
+
+                <h3>SYSTEM STATUS</h3>
+
+                <p>🟢 ONLINE</p>
+
+                <p>
+                    ATTEMPTS:
+                    <span id="attemptCount">0 / 2</span>
+                </p>
+
+                <p>STATUS: SCANNING...</p>
+
+                <div class="fake-wave">
+                    ~〰~〰〰~〰~
+                </div>
+
+            </div>
+
+        </div>
+
+        <button
+            id="dingButton"
+            class="main-btn ding-button"
+            onclick="nextPage()">
+
+            IT'S OHK TO BE BHUDHU🐬
+
+        </button>
+
+    </section>
+
+
+    <!-- ================= PAGE 5 ================= -->
+
+    <section class="page" id="page5">
+
+        <div class="topbar">
+            <div class="app-name">🧠 BRAIN TEST</div>
+            <div class="version">v2.0</div>
+        </div>
+
+        <div class="page-number">PAGE 5 OF 9</div>
+
+        <div class="cute-robot">
+            🤖
+        </div>
+
+        <div class="final-question-card">
+
+            <div class="warning-text">
+                ⚠️ ANOTHER SYSTEM CHECK
+            </div>
+
+            <h1>
+                ONE MORE <br>
+                QUESTION?😼
+            </h1>
+
+            <p>
+                This may not be a good idea.
+            </p>
+
+            <button
+                class="main-btn"
+                onclick="nextPage()">
+
+                YES 😭
+
+            </button>
+
+        </div>
+
+    </section>
+
+<!-- ================= PAGE 6 ================= -->
+
+<section class="page" id="page6">
+
+    <div class="topbar">
+        <div class="app-name">🧠 BRAIN TEST</div>
+        <div class="version">v2.0</div>
+    </div>
+
+    <div class="page-number">PAGE 6 OF 7</div>
+
+    <div class="emoji">🐘</div>
+
+    <div class="question-card">
+
+        <div class="question-number">
+            FINAL BRAIN CHECK
+        </div>
+
+        <h2>
+            Don't think about<br>
+            a <span>DOG wearing a jeans.</span> 🐕‍🦺
+        </h2>
+
+        <p class="description">
+            Seriously. Don't think about one.
+        </p>
+
+        <h3>
+            What are you thinking about?
+        </h3>
+        <br>
+        <br>
+        
+
+        
+
+        <div class="dog-buttons">
+
+    <button class="dog-answer nothing-btn" onclick="nextPage()">
+        NOTHING 😇
+    </button>
+
+    <button class="dog-answer dog-only" onclick="nextPage()">
+        🦮
+    </button>
+
+    </div>
+
+    
+    <br>
+    <br>
+
+    <p class="small-text">
+        Choose carefully. Your brain is watching. 👀
+    </p>
+
+
+</section>
+<!-- ================= PAGE 7 ================= -->
+
+<section class="page" id="page7">
+
+    <div class="topbar">
+        <div class="app-name">🧠CHALAKI TEST</div>
+        <div class="version">v2.0</div>
+    </div>
+
+    <div class="page-number">
+        PAGE 7 OF 9
+    </div>
+
+    <div class="cute-robot">
+        🤖
+    </div>
+
+    <div class="final-question-card">
+        <p>>I made you think about that DOG🦮😂</p>
+        <p>if not its ohk to be brainless🤖😂</p>
+        
+        <br>
+        <br>
+
+        <div class="warning-text">
+            ⚠️ ONE MORE TIME...
+        </div>
+
+        <h1>
+            WANNA TRY<br>
+            ANOTHER QUESTION?
+        </h1>
+
+        <p>
+            You really thought we were finished? 😂
+        </p>
+
+        <button
+            class="main-btn"
+            onclick="nextPage()">
+
+            YES 😭
+
+        </button>
+
+    </div>
+
+</section>
+    <!-- ================= PAGE 8 ================= -->
+<!-- ================= PAGE 8 ================= -->
+
+<section class="page" id="page8">
+
+    <div class="topbar">
+        <div class="app-name">💕 RAGEBAIT TEST</div>
+        <div class="version">v2.0</div>
+    </div>
+
+    <div class="page-number">
+        PAGE 8 OF 9
+    </div>
+
+    <div class="emoji">
+        💕
+    </div>
+
+    <div class="love-card">
+
+        <div class="question-number">
+            ONE LAST QUESTION...
+        </div>
+
+        <h1>
+            Do you think you  <br>
+            <span>can say NO to me?😎</span> 
+        </h1>
+
+        <p class="description">
+            I bet you can't😎. 
+        </p>
+
+        <div class="love-buttons">
+
+            <button
+                id="loveYes"
+                class="love-yes"
+                onclick="nextPage()">
+
+                YES ❤️
+
+            </button>
+
+            <button
+                id="loveNo"
+                class="love-no">
+
+                NO 😌
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= PAGE 9 ================= -->
+
+<section class="page" id="page9">
+
+    <div class="topbar">
+        <div class="app-name">🧠 BRAIN TEST</div>
+        <div class="version">v2.0</div>
+    </div>
+
+    <div class="page-number">
+        PAGE 9 OF 9
+    </div>
+
+    <div class="final-title">
+        🎉 FINAL RESULT 🎉
+    </div>
+
+    <div class="result-card">
+
+        <p>INTELLIGENCE</p>
+
+        <div class="iq">
+            19/100 
+        </div>
+
+        <h2>
+            NO BRAIN IS FOUND😂🫶
+        </h2>
+
+    </div>
+
+    <div class="diagnosis-card">
+
+        <b>YOUR RESULT: </b>
+
+        <p>
+            🧠 Brain temporarily unavailable.
+        </p>
+
+        <p>
+            Please restart and try again.
+        </p>
+        <p>
+            sorry ji😭🫶
+        </p>
+        <p>
+            just kidding.😬
+        </p>
+
+    </div>
+
+    <div class="final-buttons">
+
+        <button
+            class="main-btn"
+            onclick="shareQuiz()">
+            💌 DON'T SHARE
+        </button>
+
+        <button
+            class="replay-btn"
+            onclick="restartQuiz()">
+            🔄 RESTART
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
